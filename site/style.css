@@ -13,13 +13,14 @@ header {
     text-align: center;
 }
 
-
 .logo-title {
     display: block;
     margin: 0 auto;
-    max-width: 5px;  
-    height: auto;
+    max-width: 500%;  
+    width: 500px;
+    height: auto; 
 }
+
 
 main {
     padding: 2rem;
@@ -28,7 +29,7 @@ main {
 }
 
 form {
-    background-color: #5555557e;
+    background-color: #f4f4f4;
     padding: 2rem;
     border-radius: 5px;
     box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1);
@@ -63,6 +64,10 @@ button:hover {
 footer {
     text-align: center;
     padding: 1rem;
-    background-color: rgb(153,45,43);
+    background-color: black;
     color: #ffffff;
+}
+
+h1{
+    color: black;
 }
