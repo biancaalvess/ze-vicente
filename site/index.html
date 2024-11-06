@@ -1,0 +1,40 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Zé de Vicente - Envie seu Currículo</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <header>
+        <img src="img/logo.jpeg">
+    </header>
+    <h1>Zé de Vicente</h1>
+    <p>Oportunidades de Carreira</p>
+    <main>
+        <form id="resumeForm">
+            <label for="name">Nome Completo:</label>
+            <input type="text" id="name" name="name" required>
+
+            <label for="email">E-mail:</label>
+            <input type="email" id="email" name="email" required>
+
+            <label for="phone">Telefone:</label>
+            <input type="tel" id="phone" name="phone" required>
+
+            <label for="position">Cargo Desejado:</label>
+            <input type="text" id="position" name="position" required>
+
+            <label for="resume">Currículo (PDF):</label>
+            <input type="file" id="resume" name="resume" accept=".pdf" required>
+
+            <button type="submit">Enviar Currículo</button>
+        </form>
+    </main>
+    <footer>
+        <p>&copy; 2024 Zé de Vicente. Todos os direitos reservados.</p>
+    </footer>
+    <script src="script.js"></script>
+</body>
+</html>
