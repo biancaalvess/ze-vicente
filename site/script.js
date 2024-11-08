@@ -1,26 +1,15 @@
-document.addEventListener('DOMContentLoaded', () => {
-    const form = document.getElementById('resumeForm');
+        const slideTrack = document.querySelector('.slide-track');
+        const images = slideTrack.querySelectorAll('img');
+        let currentIndex = 0;
 
-    form.addEventListener('submit', async (e) => {
-        e.preventDefault();
-
-        const formData = new FormData(form);
-
-        try {
-            const response = await fetch('/submit', {
-                method: 'POST',
-                body: formData
-            });
-
-            if (response.ok) {
-                alert('Currículo enviado com sucesso!');
-                form.reset();
-            } else {
-                alert('Erro ao enviar o currículo. Por favor, tente novamente.');
-            }
-        } catch (error) {
-            console.error('Error:', error);
-            alert('Erro ao enviar o currículo. Por favor, tente novamente.');
+        function nextSlide() {
+            currentIndex = (currentIndex + 1) % images.length;
+            updateSlidePosition();
         }
-    });
-});
+
+        function updateSlidePosition() {
+            slideTrack.style.transform = `translateX(-${currentIndex * 100}%)`;
+        }
+
+        // Inicia a transição automática a cada 3 segundos
+        setInterval(nextSlide, 3000);

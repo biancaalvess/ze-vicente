@@ -3,37 +3,107 @@ body {
     line-height: 1.6;
     margin: 0;
     padding: 0;
-    background-color: #f4f4f4;
+    background-color: #ffffff;
 }
 
-
 header {
-    background-color: rgb(153,45,43);
-    padding: 20px 0;
+    background-color: #f0f0f0;
+    padding: 10px 0;
     text-align: center;
+    border-bottom: 2px solid #ddd;
+    box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+}
+
+.logo-title {
+    max-width: 100px;
+    height: auto;
+    margin-top: 10px;
+    transition: transform 0.3s ease;
+}
+
+.logo-title:hover {
+    transform: scale(1.05);
 }
 
 .logo-title {
     display: block;
     margin: 0 auto;
-    max-width: 500%;  
-    width: 500px;
-    height: auto; 
+    max-width: 100%;
+    height: auto;
 }
-
 
 main {
     padding: 2rem;
-    max-width: 600px;
+    max-width: 100%;
     margin: 0 auto;
 }
 
 form {
-    background-color: #f4f4f4;
-    padding: 2rem;
-    border-radius: 5px;
-    box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1);
+    background-color: #f9f9f9;
+    padding: 25px; 
+    border-radius: 20px;
+    box-shadow: 0 4px 10px rgb(153,45,43);
+    max-width: 850px; 
+    margin: 20px auto; 
+    transition: box-shadow 0.3s ease-in-out;
 }
+
+form.container {
+    padding: 40px; 
+}
+
+@media screen and (max-width: 768px) {
+    form {
+        padding: 15px; 
+        margin: 10px; 
+    }
+}
+
+@media screen and (max-width: 480px) {
+    form {
+        padding: 10px;
+        margin: 5px; 
+    }
+}
+
+form:hover {
+    box-shadow: 0 6px 15px rgb(153,45,43);
+}
+
+form label {
+    font-weight: bold;
+    color: #333;
+    margin-bottom: 5px;
+    display: block;
+}
+
+form input, form select, form button {
+    width: 100%;
+    padding: 10px;
+    margin-bottom: 15px;
+    border-radius: 5px;
+    border: 1px solid #ccc;
+    transition: border-color 0.3s ease, box-shadow 0.3s ease;
+}
+
+form input:focus, form select:focus {
+    border-color: rgb(153,45,43);
+    box-shadow: 0 0 5px rgb(153,45,43);
+}
+
+form button {
+    background-color: rgb(153,45,43);
+    color: #fff;
+    border: none;
+    font-weight: bold;
+    cursor: pointer;
+    transition: background-color 0.3s ease;
+}
+
+form button:hover {
+    background-color: rgb(153,45,43);
+}
+
 
 label {
     display: block;
@@ -42,8 +112,8 @@ label {
 
 input {
     width: 100%;
-    padding: 0.5rem;
-    margin-bottom: 1rem;
+    padding: 0.8rem;
+    margin-bottom: 1.2rem;
     border: 1px solid #ddd;
     border-radius: 3px;
 }
@@ -51,7 +121,7 @@ input {
 button {
     background-color: rgb(153,45,43);
     color: #ffffff;
-    padding: 0.7rem 1rem;
+    padding: 0.7rem 1.5rem;
     border: none;
     border-radius: 3px;
     cursor: pointer;
@@ -64,10 +134,150 @@ button:hover {
 footer {
     text-align: center;
     padding: 1rem;
-    background-color: black;
-    color: #ffffff;
+    background-color: #f0f0f0;
+    color: rgb(153,45,43);
 }
 
-h1{
-    color: black;
+#about {
+    text-align: center;
+    padding: 20px;
+}
+
+#about h2 {
+    color: rgb(153,45,43);
+    font-size: 34px;
+    margin-bottom: 10px;
+}
+
+#about p {
+    font-size: 16px;
+    margin-bottom: 15px;
+    margin: 0 auto 20px auto;
+    text-align: center;
+}
+
+.image-slider {
+    width: 100%;
+    max-width: 1200px;
+    margin: 0 auto;
+    padding: 20px 0;
+    overflow: hidden;
+}
+
+.slide-track {
+    display: flex;
+    gap: 20px;
+    animation: slide 20s linear infinite;
+}
+
+.image-slider img {
+    max-width: 50%;
+    height: auto;
+    object-fit: contain;
+}
+
+@keyframes slide {
+    0% {
+        transform: translateX(0);
+    }
+    100% {
+        transform: translateX(-100%);
+    }
+}
+
+h2 {
+    color: rgb(153,45,43);
+    font-size: 34px;
+    margin-bottom: 20px;
+    text-align: center;
+    position: relative;
+    padding: 10px 0;
+}
+
+h2::before {
+    content: '';
+    position: absolute;
+    bottom: -10px; 
+    left: 50%;
+    transform: translateX(-50%);
+    width: 60%;
+    height: 4px; 
+    background: rgb(153,45,43);
+    border-radius: 5px;
+}
+
+h2 {
+    text-shadow: 2px 2px 6px rgba(0, 0, 0, 0.1);
+}
+
+@media screen and (max-width: 768px) {
+    h2 {
+        font-size: 28px; 
+        margin-bottom: 15px;
+    }
+}
+
+@media screen and (max-width: 480px) {
+    h2 {
+        font-size: 24px; 
+    }
+}
+
+
+@media screen and (max-width: 768px) {
+    form {
+        padding: 1.5rem;
+        max-width: 90%;
+    }
+
+    form input, form select, form button {
+        padding: 1rem;
+    }
+
+    footer {
+        font-size: 0.9rem;
+    }
+}
+
+@media screen and (max-width: 480px) {
+    form {
+        max-width: 100%;
+        padding: 1rem;
+    }
+
+    form input, form select, form button {
+        padding: 0.8rem;
+    }
+
+    footer {
+        font-size: 0.8rem;
+    }
+}
+
+section {
+    position: relative;
+    margin: 4rem 0;
+}
+
+.divider {
+    background: linear-gradient(to right, #f0f0f0, #e0e0e0);
+    padding: 20px 0;
+    box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+}
+
+section::before {
+    content: '';
+    position: absolute;
+    top: -2rem;
+    left: 0;
+    width: 100%;
+    height: 40px;
+    background: linear-gradient(to bottom, #ffffff, #f0f0f0);
+    border-radius: 50%;
+    z-index: 1;
+}
+
+section .divider {
+    position: relative;
+    z-index: 2;
 }

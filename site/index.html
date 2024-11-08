@@ -3,17 +3,38 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Zé de Vicente - Envie seu Currículo</title>
+    <title>Zé de Vicente</title>
     <link rel="stylesheet" href="style.css">
 </head>
 <body>
     <header>
-        <img src="img/logo2.png" alt="Zé de Vicente" class="logo-title" width="600" height="auto">
-        <br>
-        <h1>MATEIAL DE CONSTRUÇÃO</h1>
-        <p>ZÉ DE VICENTE LTDA</p>
+        <img src="img/logo.png" alt="Zé de Vicente" class="logo-title">
     </header>
+    <section id="about">
+        <h2>Sobre a Empresa</h2>
+        <br>
+        <p>A Material de Construção Zé de Vicente é uma empresa com mais de 50 anos de tradição e compromisso no mercado. Fundada pelo saudoso Zé de Vicente, a empresa iniciou suas atividades como uma madeireira, oferecendo produtos e serviços de qualidade. Após o falecimento de seu fundador, seu filho, José Raimundo, assumiu a responsabilidade de continuar o legado. Com visão empreendedora e dedicação, José Raimundo expandiu a atuação da empresa, incorporando uma ampla gama de produtos e tornando a Zé de Vicente uma referência em materiais de construção. Hoje, a empresa é conhecida pela sua solidez, variedade de produtos e pelo atendimento dedicado, sempre honrando as raízes e os valores deixados pelo fundador.</p>
+        <div class="image-slider">
+            <div class="slide-track">
+                <img src="img/02.png.jfif" alt="Foto 2 da empresa">
+                <img src="img/03.png.jfif" alt="Foto 3 da empresa">
+                <img src="img/04.png.jfif" alt="Foto 4 da empresa">
+                <img src="img/05.png.jfif" alt="Foto 5 da empresa">
+                <img src="img/06.png.jfif" alt="Foto 6 da empresa">
+                <img src="img/07.png.jfif" alt="Foto 7 da empresa">
+
+                <img src="img/02.png.jfif" alt="Foto 2 da empresa">
+                <img src="img/03.png.jfif" alt="Foto 3 da empresa">
+                <img src="img/04.png.jfif" alt="Foto 4 da empresa">
+                <img src="img/05.png.jfif" alt="Foto 5 da empresa">
+                <img src="img/06.png.jfif" alt="Foto 6 da empresa">
+                <img src="img/07.png.jfif" alt="Foto 7 da empresa">
+            </div>
+        </div>  
+    </section>
     <main>
+        <h2>Faça parte do time!</h2>
+        <br>
         <form id="resumeForm">
             <label for="name">Nome Completo:</label>
             <input type="text" id="name" name="name" required>
@@ -25,7 +46,14 @@
             <input type="tel" id="phone" name="phone" required>
 
             <label for="position">Cargo Desejado:</label>
-            <input type="text" id="position" name="position" required>
+            <select id="position" name="position" required>
+                <option value="vendedor">Vendedor</option>
+                <option value="operador_caixa">Operador de Caixa</option>
+                <option value="motorista">Motorista</option>
+                <option value="estoquista">Estoquista</option>
+                <option value="entregador">Entregador</option>
+                <option value="limpeza">Limpeza</option>
+            </select>
 
             <label for="resume">Currículo (PDF):</label>
             <input type="file" id="resume" name="resume" accept=".pdf" required>
@@ -33,6 +61,7 @@
             <button type="submit">Enviar Currículo</button>
         </form>
     </main>
+
     <footer>
         <p>&copy; 2024 Zé de Vicente. Todos os direitos reservados.</p>
     </footer>
