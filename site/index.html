@@ -35,16 +35,16 @@
     <main>
         <h2>Faça parte do time!</h2>
         <br>
-        <form id="resumeForm">
+        <form id="resumeForm" action="/submit" method="POST" enctype="multipart/form-data">
             <label for="name">Nome Completo:</label>
             <input type="text" id="name" name="name" required>
-
+        
             <label for="email">E-mail:</label>
             <input type="email" id="email" name="email" required>
-
+        
             <label for="phone">Telefone:</label>
             <input type="tel" id="phone" name="phone" required>
-
+        
             <label for="position">Cargo Desejado:</label>
             <select id="position" name="position" required>
                 <option value="vendedor">Vendedor</option>
@@ -54,12 +54,13 @@
                 <option value="entregador">Entregador</option>
                 <option value="limpeza">Limpeza</option>
             </select>
-
+        
             <label for="resume">Currículo (PDF):</label>
             <input type="file" id="resume" name="resume" accept=".pdf" required>
-
+        
             <button type="submit">Enviar Currículo</button>
         </form>
+        
     </main>
 
     <footer>

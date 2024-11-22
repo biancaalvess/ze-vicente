@@ -40,10 +40,10 @@ main {
 
 form {
     background-color: #f9f9f9;
-    padding: 25px; 
+    padding: 15px; 
     border-radius: 20px;
     box-shadow: 0 4px 10px rgb(153,45,43);
-    max-width: 850px; 
+    max-width: 900px; 
     margin: 20px auto; 
     transition: box-shadow 0.3s ease-in-out;
 }
@@ -78,7 +78,7 @@ form label {
 }
 
 form input, form select, form button {
-    width: 100%;
+    width: 90%;
     padding: 10px;
     margin-bottom: 15px;
     border-radius: 5px;
@@ -281,3 +281,6 @@ section .divider {
     position: relative;
     z-index: 2;
 }
+
+
+
