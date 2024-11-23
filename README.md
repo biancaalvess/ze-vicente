@@ -2,7 +2,6 @@
 
 # Zé de Vicente  
 
-## Descrição do Projeto  
 O site "Zé de Vicente" foi desenvolvido para a **Material de Construção Zé de Vicente**, uma empresa com mais de 50 anos de tradição no mercado. Ele visa representar a história e os valores da empresa, oferecendo uma interface moderna e acessível. Além disso, possui funcionalidades para envio de currículos, promovendo novas oportunidades de trabalho.
 
 ---
