@@ -1,6 +1,5 @@
 # Zé de Vicente
 
-## Descrição do Projeto
 O site foi desenvolvido utilizando uma combinação de tecnologias e ferramentas para garantir uma experiência completa tanto no front-end quanto no back-end.
 
 ### Ferramentas e Tecnologias Utilizadas:
