@@ -1,61 +1,32 @@
-- Em produção...
+# Zé de Vicente
 
-# Zé de Vicente  
+## Descrição do Projeto
+O site foi desenvolvido utilizando uma combinação de tecnologias e ferramentas para garantir uma experiência completa tanto no front-end quanto no back-end.
 
-O site "Zé de Vicente" foi desenvolvido para a **Material de Construção Zé de Vicente**, uma empresa com mais de 50 anos de tradição no mercado. Ele visa representar a história e os valores da empresa, oferecendo uma interface moderna e acessível. Além disso, possui funcionalidades para envio de currículos, promovendo novas oportunidades de trabalho.
-
----
-
-## Estrutura do Projeto  
-
-### **1. Front-End**  
-O front-end foi desenvolvido utilizando tecnologias web padrão:  
-- **HTML**: Estruturação do conteúdo.  
-- **CSS**: Estilização para tornar a interface visualmente agradável.  
-- **JavaScript**: Interatividade e funcionalidades dinâmicas.
-
-#### Principais Funcionalidades:
-- **Seção "Sobre a Empresa"**: Explica a história e os valores da empresa.  
-- **Carrossel de Imagens**: Exibe fotos da empresa, destacando momentos e infraestrutura.  
-- **Formulário de Envio de Currículos**: Permite aos candidatos preencherem seus dados e anexarem o currículo em formato PDF.  
-
-### **2. Back-End**  
-O back-end foi desenvolvido em **Flask**, um framework em Python, para gerenciar as requisições e o processamento dos dados.  
-
-#### Funcionalidades:
-- **Recebimento de Currículos**: Processa as informações enviadas pelo formulário, como nome, e-mail, telefone e cargo desejado.  
-- **Armazenamento de Arquivos**: Faz upload e armazenamento seguro do currículo em PDF.  
-- **Integração com Banco de Dados**: Registra as informações dos candidatos em uma base de dados.  
-
-### **3. Banco de Dados**  
-O sistema utiliza **SQLite**, uma solução leve e eficaz para o armazenamento de dados.  
-
-#### Estrutura do Banco de Dados:  
-Tabela `candidatos`:  
-| Campo           | Tipo         | Descrição                               |  
-|------------------|--------------|-----------------------------------------|  
-| id              | INTEGER      | Identificador único do candidato (PK). |  
-| nome            | TEXT         | Nome completo do candidato.            |  
-| email           | TEXT         | Endereço de e-mail do candidato.       |  
-| telefone        | TEXT         | Telefone de contato do candidato.      |  
-| cargo_desejado  | TEXT         | Cargo escolhido pelo candidato.        |  
-| arquivo_curriculo | TEXT       | Caminho para o arquivo PDF enviado.    |  
-| data_envio      | DATETIME     | Data e hora do envio do currículo.     |  
+### Ferramentas e Tecnologias Utilizadas:
+- **HTML5**: Utilizado para a estruturação do conteúdo e organização das páginas.
+- **CSS3**: Aplicado para estilizar o layout do site, tornando-o visualmente atraente e responsivo.
+- **JavaScript**: Usado para implementar interatividade, como o carrossel de imagens e o envio de formulários.
+- **Flask**: Framework Python utilizado para o desenvolvimento do back-end, permitindo o processamento das requisições e o envio de dados do formulário.
+- **SQLite**: Banco de dados leve para armazenar as informações dos candidatos que se inscrevem para as vagas de emprego, incluindo dados como nome, e-mail, cargo desejado e currículo enviado.
+- **Git e GitHub**: Utilizados para controle de versão e hospedagem do código, facilitando o gerenciamento e colaboração no projeto.
 
 ---
 
-## Configuração do Projeto  
+## Como foi feito
+O desenvolvimento do site "Zé de Vicente" foi realizado em duas partes:  
+1. **Front-End**: A interface do usuário foi construída utilizando HTML, CSS e JavaScript, com foco em design responsivo e facilidade de navegação. Técnicas como flexbox e grid foram utilizadas para garantir a boa adaptação do layout a diferentes dispositivos.
+2. **Back-End**: Utilizando o framework **Flask**, desenvolvi o back-end para gerenciar o envio de currículos. O sistema processa os dados do formulário, faz o upload de arquivos (currículos em PDF) e armazena as informações no banco de dados **SQLite**.
 
-### **Requisitos**  
-- Python 3.12 ou superior  
-- Flask  
-- SQLite  
+---
 
-### **Instalação e Execução**  
-1. **Clone o repositório:**  
-   ```bash
-   git clone https://github.com/biancaalvess/ze-vicente
-   cd ze-de-vicente
+## Funcionalidades Principais:
+- **Página de "Sobre a Empresa"**: Apresenta a história e os valores da empresa.
+- **Carrossel de Imagens**: Exibe fotos da empresa, com destaque para momentos importantes e a infraestrutura.
+- **Formulário de Envio de Currículos**: Permite que candidatos enviem seus dados pessoais e anexem currículos no formato PDF.
+- **Armazenamento Seguro de Currículos**: O back-end recebe e processa os currículos, garantindo seu armazenamento adequado.
 
+---
 
-Desenvolvido com 💻 e ☕ por Bianca Alves.
+## Acesso ao Projeto
+O projeto está disponível para visualização no repositório GitHub: [Zé de Vicente GitHub](https://github.com/biancaalvess/ze-vicente).
